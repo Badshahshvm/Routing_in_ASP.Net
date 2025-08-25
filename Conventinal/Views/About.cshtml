@@ -1,0 +1,87 @@
+@{
+    ViewData["Title"] = "About Me";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>@ViewData["Title"] - Shivam Kumar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="#">Shivam Kumar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/User/Index">Home</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link active" href="/User/About">About</a>
+
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="@Url.Action( "Contact","User")">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <div class="container mt-5 mb-5">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="bg-white p-5 rounded shadow">
+          <h2 class="mb-4 text-center text-primary">About Me</h2>
+          <p class="lead text-center">Hello! I’m <strong>Shivam Kumar</strong>, an enthusiastic and motivated B.Tech student in Information Technology, passionate about coding, software development, and exploring new technologies.</p>
+
+          <hr class="my-4">
+
+          <h4 class="text-secondary">🎓 Education</h4>
+          <ul class="list-group list-group-flush mb-4">
+            <li class="list-group-item">📘 <strong>10th:</strong> Bapu High School</li>
+            <li class="list-group-item">📗 <strong>12th:</strong> K.L.S College, Nawada</li>
+            <li class="list-group-item">💻 <strong>B.Tech in IT:</strong> Muzaffarpur Institute of Technology</li>
+          </ul>
+
+          <h4 class="text-secondary">🛠️ Skills</h4>
+          <div class="row row-cols-2 row-cols-md-3 g-2 mb-4">
+            <div class="col"><span class="badge bg-primary w-100">DSA</span></div>
+            <div class="col"><span class="badge bg-success w-100">OOPs</span></div>
+            <div class="col"><span class="badge bg-info text-dark w-100">DBMS</span></div>
+            <div class="col"><span class="badge bg-secondary w-100">Operating System</span></div>
+            <div class="col"><span class="badge bg-danger w-100">Computer Networks</span></div>
+            <div class="col"><span class="badge bg-warning text-dark w-100">Java</span></div>
+            <div class="col"><span class="badge bg-dark w-100">C++</span></div>
+            <div class="col"><span class="badge bg-primary w-100">Python</span></div>
+            <div class="col"><span class="badge bg-success w-100">C#</span></div>
+            <div class="col"><span class="badge bg-info text-dark w-100">ASP.NET Web API</span></div>
+          </div>
+
+          <h4 class="text-secondary">🌍 Hobbies</h4>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">✈️ Travelling to new places</li>
+            <li class="list-group-item">🔎 Exploring new technologies</li>
+          </ul>
+
+          <div class="text-center mt-4">
+            <a href="/User/Index" class="btn btn-outline-primary">← Back to Home</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
